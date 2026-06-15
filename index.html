@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="search-box">
+
+<div class="search-container">
+            <input type="text" placeholder="Location" id="search-bar" spellcheck="false">
+            <div id="suggestions"></div>
+            </div>
+            <button id="btn" aria-label="Search weather"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+
+                </svg></button>
+        </div>
+
+        <div class="location-section">
+            <p id="loading-message"></p>
+            <p id="error-message"></p>
+
+            <h3 id="city-name">Search a city</h3>
+            <p id="date">--</p>
+        </div>
+
+        <div class="temperature-section">
+            <img id="weather-icon" alt="Weather icon">
+
+            <h2 class="temp" id="temperature">--°C</h2>
+            <p id="condition">--</p>
+            <p id="feels-like">Feels like --°C</p>
+        </div>
+
+        <div class="details-section">
+            <div class="detail-card">
+                <p>Humidity</p>
+                <p id="humidity">--%</p>
+            </div>
+
+            <div class="detail-card">
+                <p>Wind</p>
+                <p id="wind">-- km/h</p>
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h3>Forecast</h3>
+
+            <div class="forecast-cards">
+
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+                <div class="forecast-card">
+                    <p   class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp" >--° / --°</p>
+                </div>
+                <div class="forecast-card">
+                    <p  class="forecast-day">--</p>
+                    <img  alt="weather icon" class="forecast-icon">
+                    <p  class="forecast-temp">--° / --°</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
